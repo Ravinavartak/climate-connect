@@ -30,28 +30,6 @@
 | **APIs**     | GNews API · Reddit API (via PRAW)                        |
 
 
-## 📁 Project Structure
-climate-connect/
-│
-├── backend/               # FastAPI backend
-│   ├── main.py            # All API routes and logic
-│   ├── .env.example       # Backend environment variables
-│   ├── requirements.txt
-│
-├── src/                   # React frontend
-│   ├── assets/
-│   ├── components/
-│   ├── contexts/
-│   ├── pages/
-│   ├── utils/
-│   ├── firebase.js        # Firebase config
-│   ├── main.jsx
-│   ├── App.jsx
-│
-├── .gitignore
-├── README.md
-├── package.json
-└── vite.config.js
 
 ## 🔐 Prerequisites
 Python 3.10+
@@ -95,7 +73,7 @@ VITE_FIREBASE_PROJECT_ID=your_project_id
 
 VITE_BACKEND_URL=http://localhost:8000
 
-👤 Connect
+## 👤 Connect
 
 Ravina Vartak
 
