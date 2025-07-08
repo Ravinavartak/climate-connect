@@ -76,20 +76,31 @@ npm install
 npm run dev
 
 ## 🔑 Environment Variables
+
 backend/.env
+
 GNEWS_API_KEY=your_gnews_api_key
+
 REDDIT_CLIENT_ID=your_reddit_client_id
+
 REDDIT_CLIENT_SECRET=your_reddit_secret
+
 REDDIT_USER_AGENT=ClimateConnect/1.0
 
 src/.env
+
 VITE_FIREBASE_API_KEY=your_firebase_key
+
 VITE_FIREBASE_PROJECT_ID=your_project_id
+
 VITE_BACKEND_URL=http://localhost:8000
 
 👤 Connect
+
 Ravina Vartak
-📍 Mumbai
+
 📧 ravinavartak@email.com
+
 🌐 GitHub – https://github.com/Ravinavartak
+
 🔗 Linkedin - https://www.linkedin.com/in/ravina-vartak0912/
