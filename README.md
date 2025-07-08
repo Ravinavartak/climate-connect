@@ -42,15 +42,23 @@ GNews & Reddit API credentials
 
 ## Setup
 🧪 Backend Setup
+
 cd backend
+
 python -m venv .venv
+
 source .venv/Scripts/activate  # or . .venv/bin/activate (Linux/Mac)
+
 pip install -r requirements.txt
+
 cp .env.example .env  # then fill in API keys
+
 uvicorn main:app --reload
 
 💻 Frontend Setup
+
 npm install
+
 npm run dev
 
 ## 🔑 Environment Variables
