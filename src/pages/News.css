@@ -1,0 +1,121 @@
+/* ========== Climate News Feed page ========== */
+.news-page {
+  min-height: 100vh;
+  background: #00251a;        /* same deep‑green as home */
+  padding: 104px 20px 80px;   /* 64 px nav‑bar + 40 px gap */
+  overflow-y: auto;
+}
+
+/* -- Card wrapper -- */
+.news-container {
+  max-width: 920px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(6px);
+  padding: 48px 40px;
+  border-radius: 22px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+}
+
+/* -- Heading gradient like home -- */
+.news-container h1 {
+  text-align: center;
+  margin-bottom: 28px;
+  background: linear-gradient(45deg, #26a69a, #66bb6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -- Grid of article cards -- */
+.article-list {
+  margin-top: 32px;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* -- Article card -- */
+.card {
+  background: #f8f9fa;
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* sentiment accent strip */
+.card.positive { border-color: #2ecc71; }
+.card.neutral  { border-color: #f39c12; }
+.card.negative { border-color: #e74c3c; }
+
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #263238;
+  line-height: 1.35;
+}
+
+.card small {
+  color: #607d8b;
+  font-size: 0.76rem;
+}
+
+.card p {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.card a {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #00897b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Add these lines after your .card styles */
+
+/* colour only the sentiment word */
+.sentiment.positive { color: #2ecc71; font-weight: 600; }
+.sentiment.neutral  { color: #f39c12; font-weight: 600; }
+.sentiment.negative { color: #e74c3c; font-weight: 600; }
+.sentiment-label {
+  color: #000;         /* black color */
+  font-weight: 500;
+}
+
+
+
+/* ========== Responsive tweaks ========== */
+@media (max-width: 600px) {
+  .news-container {
+    padding: 32px 24px;
+  }
+  
+  .news-container h1 {
+    font-size: 1.6rem;
+  }
+  
+  .article-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recharts-default-legend .recharts-legend-item-text {
+  fill: #263238;   /* dark slate */
+  font-weight: 600;
+}
