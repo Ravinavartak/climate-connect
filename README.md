@@ -28,3 +28,68 @@
 | **Auth / DB**| Firebase Auth · Cloud Firestore (modular SDK)            |
 | **Backend**  | Python 3.11 · FastAPI · Uvicorn · `vaderSentiment` · `praw` · `httpx` |
 | **APIs**     | GNews API · Reddit API (via PRAW)                        |
+
+
+## 📁 Project Structure
+climate-connect/
+│
+├── backend/               # FastAPI backend
+│   ├── main.py            # All API routes and logic
+│   ├── .env.example       # Backend environment variables
+│   ├── requirements.txt
+│
+├── src/                   # React frontend
+│   ├── assets/
+│   ├── components/
+│   ├── contexts/
+│   ├── pages/
+│   ├── utils/
+│   ├── firebase.js        # Firebase config
+│   ├── main.jsx
+│   ├── App.jsx
+│
+├── .gitignore
+├── README.md
+├── package.json
+└── vite.config.js
+
+## 🔐 Prerequisites
+Python 3.10+
+
+Node.js and npm
+
+Firebase project with Auth and Firestore enabled
+
+GNews & Reddit API credentials
+
+## Setup
+🧪 Backend Setup
+cd backend
+python -m venv .venv
+source .venv/Scripts/activate  # or . .venv/bin/activate (Linux/Mac)
+pip install -r requirements.txt
+cp .env.example .env  # then fill in API keys
+uvicorn main:app --reload
+
+💻 Frontend Setup
+npm install
+npm run dev
+
+## 🔑 Environment Variables
+backend/.env
+GNEWS_API_KEY=your_gnews_api_key
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_secret
+REDDIT_USER_AGENT=ClimateConnect/1.0
+
+src/.env
+VITE_FIREBASE_API_KEY=your_firebase_key
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_BACKEND_URL=http://localhost:8000
+
+👤 Connect
+Ravina Vartak
+📍 Mumbai
+📧 ravinavartak@email.com
+🌐 GitHub – https://github.com/Ravinavartak
+🔗 Linkedin - https://www.linkedin.com/in/ravina-vartak0912/
