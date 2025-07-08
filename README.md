@@ -41,7 +41,7 @@ Firebase project with Auth and Firestore enabled
 GNews & Reddit API credentials
 
 ## Setup
-🧪 Backend Setup
+**🧪 Backend Setup**
 
 cd backend
 
@@ -55,7 +55,7 @@ cp .env.example .env  # then fill in API keys
 
 uvicorn main:app --reload
 
-💻 Frontend Setup
+**💻 Frontend Setup**
 
 npm install
 
@@ -63,7 +63,7 @@ npm run dev
 
 ## 🔑 Environment Variables
 
-backend/.env
+**backend/.env**
 
 GNEWS_API_KEY=your_gnews_api_key
 
@@ -73,7 +73,7 @@ REDDIT_CLIENT_SECRET=your_reddit_secret
 
 REDDIT_USER_AGENT=ClimateConnect/1.0
 
-src/.env
+**src/.env**
 
 VITE_FIREBASE_API_KEY=your_firebase_key
 
@@ -83,7 +83,7 @@ VITE_BACKEND_URL=http://localhost:8000
 
 ## 👤 Connect
 
-Ravina Vartak
+**Ravina Vartak**
 
 📧 ravinavartak@email.com
 
